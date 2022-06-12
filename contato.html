@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/contato.css" />
+    <title>Contato</title>
+  </head>
+  <body>
+    <header>
+      <nav class="topnav">
+        <a href="index.html">Home</a>
+        <a href="series.html">Séries</a>
+        <a href="artistas.html">Artistas</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <h1>Entre em contato com a gente!</h1>
+    </header>
+    <main>
+      <div class="card">
+        <form action="GET" autocomplete="on">
+          <!-- <legend>
+          <b>Formulário de Contato</b>
+        </legend>
+        <br /> -->
+          <div>
+            <label for="nome" class="labelInput"><b>Nome</b></label>
+            <br />
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              class="inputUser"
+              placeholder="Digite seu nome"
+              required
+            />
+            <br />
+            <label for="sobrenome" class="labelInput"><b>Sobrenome</b></label>
+            <br />
+            <input
+              type="text"
+              name="sobrenome"
+              id="sobrenome"
+              class="inputUser"
+              placeholder="Digite seu sobrenome"
+              required
+            />
+          </div>
+
+          <br />
+          <div>
+            <label for="data_nascimento"><b>Data de Nascimento</b></label>
+            <br />
+            <input
+              type="date"
+              name="data_nascimento"
+              id="data_nascimento"
+              min="1988-01-01"
+              placeholder="Digite sua data de nascimento"
+              required
+            />
+          </div>
+
+          <br />
+          <label for="telefone" class="labelInput"><b>Telefone</b></label>
+          <br />
+          <input
+            type="number"
+            name="telefone"
+            id="telefone"
+            class="inputUser"
+            placeholder="Digite seu telefone"
+            minlength="8"
+            maxlength="9"
+          />
+          <br />
+          <label for="email" class="labelInput"><b>Email</b></label>
+          <br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="inputUser"
+            placeholder="Digite seu email"
+            required
+          />
+          <br />
+          <p><b>Genero</b></p>
+          <input type="radio" name="sexo" value="0" />Feminino
+          <input type="radio" name="sexo" value="0" />Masculino
+          <input type="radio" name="sexo" value="0" checked="checked" />Outro
+          <br />
+          <p><b>Motivo do contato</b></p>
+          <input type="checkbox" name="motivo[]" value="0" />Sugestão<br />
+          <input type="checkbox" name="motivo[]" value="1" />Parceria<br />
+          <input type="checkbox" name="motivo[]" value="2" />Dúvida<br />
+          <input type="checkbox" name="motivo[]" value="3" />Outro<br />
+          <br />
+          <div>
+            <label for="arquivo" class="labelInput"
+              ><b>(Arquivo para sugestão)</b></label
+            >
+            <br />
+            <input
+              type="file"
+              name="arquivo"
+              id="arquivo"
+              class="inputUser"
+              placeholder="Envie aqui sua sugestão"
+            />
+          </div>
+          <br />
+          <input type="submit" name="submit" id="submit" />
+          <input type="reset" name="reset" id="reset" />
+        </form>
+      </div>
+    </main>
+    <footer class="card">feito com amor por FIJ LTDA</footer>
+  </body>
+</html>
